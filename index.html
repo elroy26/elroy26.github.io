@@ -36,7 +36,7 @@
                         // If login successful, store credentials in session storage
                         sessionStorage.setItem("logged", credentials);
                         // Redirect to the dashboard or landing page
-                        window.location.href = "http://127.0.0.1:5502/html/dashboard.html";
+                        window.location.href = "./html/dashboard.html";
                     },
                     error: function (xhr, status, error) {
                         // Debugging: Log error details
@@ -44,7 +44,7 @@
     
                         // Handle login failure
                         alert("Login error:"+ status+ error);
-                        location.assign("http://127.0.0.1:5502/html/index.html");
+                        location.assign("index.html");
                     }
                 });
             });
